@@ -70,7 +70,7 @@ class ProductRepo {
   Future<void> deleteProduct({
     String? id,
   }) async {
-    final response = await http.put(
+    final  response = await http.delete(
       Uri.parse(
         'https://fakestoreapi.com/products/$id',
       ),
